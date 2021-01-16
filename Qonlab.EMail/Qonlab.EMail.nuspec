@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Qonlab.EMail</id>
+    <version>1.0.0</version>
+	<description>Qonlab Qonlab E-Mail</description>
+	<authors>Qonlab GmbH</authors>
+    <title>Qonlab.EMail</title>
+    <owners>Qonlab GmbH</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <copyright>Copyright © 2021</copyright>
+	<icon>https://www.qonlab.com/wp-content/uploads/QonlabImage.jpg</icon>
+  </metadata>
+</package>

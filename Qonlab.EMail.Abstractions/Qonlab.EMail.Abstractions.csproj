@@ -1,14 +1,25 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <Copyright>Copyright © 2021</Copyright>
-    <Company>Qonlab GmbH</Company>
-    <Authors>Qonlab GmbH</Authors>
-  </PropertyGroup>
-  
-  <ItemGroup>
-    <PackageReference Include="Qonlab.Core" />
-  </ItemGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<Copyright>Copyright © 2023</Copyright>
+		<Company>Qonlab GmbH</Company>
+		<Authors>Qonlab GmbH</Authors>
+		<Version>1.0.1</Version>
+		<PackageIcon>icon.png</PackageIcon>
+		<RepositoryUrl>https://github.com/Qonlab-GmbH/Qonlab.EMail</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="icon.png">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Qonlab.Core" Version="1.0.6" />
+	</ItemGroup>
 
 </Project>

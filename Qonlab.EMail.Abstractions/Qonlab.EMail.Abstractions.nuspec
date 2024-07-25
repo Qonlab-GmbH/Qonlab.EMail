@@ -2,13 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
 		<id>Qonlab.EMail.Abstractions</id>
-		<version>1.0.1</version>
+		<version>1.0.2</version>
 		<description>Qonlab E-Mail abstractions</description>
 		<authors>Qonlab GmbH</authors>
 		<title>Qonlab.EMail.Abstractions</title>
 		<owners>Qonlab GmbH</owners>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<copyright>Copyright © 2023</copyright>
+		<copyright>Copyright © 2024</copyright>
 		<icon>icon.png</icon>
 	</metadata>
 	<files>

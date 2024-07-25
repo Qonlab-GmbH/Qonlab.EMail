@@ -2,10 +2,10 @@
 
 	<PropertyGroup>
 		<TargetFramework>netstandard2.1</TargetFramework>
-		<Copyright>Copyright © 2023</Copyright>
+		<Copyright>Copyright © 2024</Copyright>
 		<Company>Qonlab GmbH</Company>
 		<Authors>Qonlab GmbH</Authors>
-		<Version>1.0.1</Version>
+		<Version>1.0.2</Version>
 		<PackageIcon>icon.png</PackageIcon>
 		<RepositoryUrl>https://github.com/Qonlab-GmbH/Qonlab.EMail</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
@@ -19,10 +19,10 @@
 	</ItemGroup>
 	
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.3" />
-		<PackageReference Include="System.Security.Cryptography.Pkcs" Version="6.0.2" />
-		<PackageReference Include="Qonlab.Core" Version="1.0.6" />
-		<PackageReference Include="Qonlab.EMail.Abstractions" Version="1.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.1" />
+		<PackageReference Include="System.Security.Cryptography.Pkcs" Version="8.0.0" />
+		<PackageReference Include="Qonlab.Core" Version="1.0.7" />
+		<PackageReference Include="Qonlab.EMail.Abstractions" Version="1.0.2" />
 	</ItemGroup>
 
 </Project>

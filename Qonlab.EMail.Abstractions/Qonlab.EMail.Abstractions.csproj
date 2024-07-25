@@ -2,10 +2,10 @@
 
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
-		<Copyright>Copyright © 2023</Copyright>
+		<Copyright>Copyright © 2024</Copyright>
 		<Company>Qonlab GmbH</Company>
 		<Authors>Qonlab GmbH</Authors>
-		<Version>1.0.1</Version>
+		<Version>1.0.2</Version>
 		<PackageIcon>icon.png</PackageIcon>
 		<RepositoryUrl>https://github.com/Qonlab-GmbH/Qonlab.EMail</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
@@ -19,7 +19,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Qonlab.Core" Version="1.0.6" />
+		<PackageReference Include="Qonlab.Core" Version="1.0.7" />
 	</ItemGroup>
 
 </Project>

@@ -158,7 +158,7 @@ namespace Qonlab.EMail {
         private IList<MailMessage> ConvertEncryptedEMailToMailMessages( EncryptedEMail encryptedEmail ) {
             var mailMessages = new List<MailMessage>();
 
-            var body = encryptedEmail.Body.Replace( "\r", "" ).Replace( "\n", "<br />" );
+            var body = ConvertBodyToHtmlBody( encryptedEmail.Body );
 
             var sb = new StringBuilder();
             if ( encryptedEmail.Attachments != null && encryptedEmail.Attachments.Count > 0 ) {
@@ -272,7 +272,7 @@ namespace Qonlab.EMail {
         }
 
         private MailMessage ConvertEMailToSingleMailMessage( Qonlab.EMail.Abstractions.EMail email ) {
-            var mailMessage = new MailMessage( email.From, email.To.ToSeparatedString( separator: "," ), email.Subject, email.Body.Replace( "\r", "" ).Replace( "\n", "<br />" ) );
+            var mailMessage = new MailMessage( email.From, email.To.ToSeparatedString( separator: "," ), email.Subject, ConvertBodyToHtmlBody( email.Body ) );
             mailMessage.Priority = email.MailPriority;
             mailMessage.DeliveryNotificationOptions = email.DeliveryNotificationOptions;
             mailMessage.IsBodyHtml = true;
@@ -296,5 +296,13 @@ namespace Qonlab.EMail {
             return mailMessage;
         }
 
+        /// <remarks>
+        /// Since version 1.0.3 line breaks are no longer converted to HTML line breaks.
+        /// In order to restore this behaviour override this method with:
+        /// <c>.Replace( "\r", "" ).Replace( "\n", "<br />" )</c>
+        /// </remarks>
+        protected virtual string ConvertBodyToHtmlBody( string body ) {
+            return body;
+        }
     }
 }
